@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+.animation-box {
+  width: 90%; /* Increased width for more space */
+  height: 50rem; /* Increased height to accommodate more text */
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Base styles for text */
+.animation-box div {
+  position: absolute;
+  left: -100%; /* Start off-screen */
+  opacity: 0; /* Hidden initially */
+  color: white;
+}
+
+/* Individual text styles */
+.first-text { font-size: 4.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 0.5s; }
+.second-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 10s; }
+.third-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 20s; }
+.fourth-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 30s; }
+.fifth-text { font-size: 4.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 40s; }
+.sixth-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 50s; }
+.seventh-text { font-size: 4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 60s; }
+.eighth-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 70s; }
+.ninth-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 80s; }
+.tenth-text { font-size: 3.4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 90s; }
+.eleventh-text { font-size: 4rem; animation: slideFromLeft 10s ease-in-out forwards; animation-delay: 100s; }
+
+/* Keyframes for animations */
+@keyframes slideFromLeft {
+  0% { left: -100%; opacity: 0; }
+  30% { left: 5%; opacity: 1; }
+  70% { left: 5%; opacity: 1; }
+  100% { left: -100%; opacity: 0; }
+}
